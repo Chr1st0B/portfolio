@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Do Hyeon', sans-serif; */
+
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+
+/* Button Day and Night */
+
+.power{
+  display: flex;
+  align-items: center;
+  /* border: 2px solid rgb(255, 230, 0); */
+}
+
+.homeDay{
+  background-color: #ff451c;
+  color: black;
+}
+
+.homeNight{
+  background-color: #210011;
+  color: white;
+}
+
+.homeDayBody{
+  background-color: white;
+  color: black;
+}
+
+.homeNightBody{
+  background-color: #210011;
+  color: white;
+}
+
+svg {
+  cursor: pointer;
+}
+
+.loader{
+  width: 35px;
+  /* border: 2px solid black; */
+}
+
+
+/* Header */
+
+.bigBox{
+  display: flex;
+  justify-content: space-between;
+}
+
+.box{
+  display: flex;
+  /* background-color: rgba(0, 0, 0, 0.664); */
+  justify-content: center;
+  /* border: 1px solid black; */
+  margin-left: 12%;
+}
+
+.liens{
+  display: flex;
+}
+
+.liens ul{
+  display: flex;
+  list-style: none;
+  font-size: 25px;
+  padding: 0%;
+}
+
+.liens ul li + li{
+  margin-left: 200px;
+
+}
+
+.liens ul li a{
+  text-decoration:none;
+  font-weight: bold;
+}
+
+/* Home */
+
+.home{
+  display: flex;
+  background-image: url(./images/aman.jpg);
+  background-size: cover;
+  height: 669px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-position: center;
+}
+
+.home h1{
+  font-family: 'Do Hyeon', sans-serif;
+}
+
+/* Me */
+
+.me{
+  height: 669px;
+  /* border: 2px solid blue; */
+}
+
+.meMasterBox1{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 25%;
+  margin-right: 25%;
+  /* border: 2px solid red; */
+}
+
+.meBox1{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.meBox1 hr{
+  width: 10%;
+}
+
+.meBox3{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 25px;
+}
+
+.meBox3 hr{
+  width: 10%;
+}
+
+.meMasterBox2{
+  display: flex;
+  justify-content: center;
+  border: 2px solid red;
+}
+
+.meMasterBox2 h3{
+  margin: 0;
+  margin-bottom: 2%;
+}
+
+.meMasterBox2 hr{
+  width: 10%;
+  margin-bottom: 7%;
+  margin-bottom: 0;
+
+}
+
+.meMasterBox2 img{
+  width: 4%;
+}
+
+.bar{
+  width: 400px; /* Full width */
+  background-color: #ddd; /* Grey background */
+  box-shadow: 4px 4px 2px grey;
+}
+
+.skills{
+  text-align: right; /* Right-align text */
+  padding-top: 5px; /* Add top padding */
+  padding-bottom: 5px; /* Add bottom padding */
+  color: black; /* text color */
+}
+
+.meBox4{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 15%;
+  margin-right: 10%;
+  /* padding-left: 10%;
+  padding-right: 10%; */
+  border: 2px solid yellow;
+}
+
+.html{
+  width: 90%; background-color: #e44d26; /* Green */
+}
+.css{
+  width: 80%; background-color: #2965f1; /* Blue */
+}
+.js{
+  width: 70%; background-color: #f44336; /* Red */
+}
+.react{
+  width: 65%; background-color: #f5e726; /* yellox */
+}
+
+.meBox5{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-right: 15%;
+  /* padding-left: 10%;
+  padding-right: 10%; */
+  border: 2px solid green;
+}
+
+.vmware{
+  width: 80%; background-color: #04AA6D; /* Green */
+}
+.srv{
+  width: 70%; background-color: #2196F3; /* Blue */
+}
+.bdd{
+  width: 70%; background-color: #f44336; /* Red */
+}
+.supervision{
+  width: 65%; background-color: #f5e726; /* yellox */
+}
+
+/* .progress-bar {
+  text-align: left;
+  transition-duration: 3s;
+}
+.progress-bar-danger {
+  background-color: #d9534f;
+}
+.progress-bar {
+  float: left;
+  width: 0;
+  height: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #337ab7;
+  -webkit-box-shadow: inset 0 -1px 0 rgb(0 0 0 / 15%);
+  box-shadow: inset 0 -1px 0 rgb(0 0 0 / 15%);
+  -webkit-transition: width .6s ease;
+  -o-transition: width .6s ease;
+  transition: width .6s ease;
+} */
+
+
+/* Projects */
+
+.projects{
+  height: 669px;
+}
+
+.projectsMasterBox1{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.projectsBox1{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.projectsBox1 hr{
+  width: 10%;
+}
+
+.projectsMasterBox2{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.projectsBox2{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.projectsBox3{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* Contact */
+
+.contact{
+  height: 669px;
+}
+
+.contactsMasterBox1{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.contactBox1{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.contactBox1 hr{
+  width: 10%;
+}
+
+.contactBox2{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+[type="text"], [type="email"] , textarea{
+  display: block;
+  width:100%;
+  padding: 8px;
+  border:2px solid rgb(202, 202, 202); 
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+button{
+  margin-top: 10px;
+}
