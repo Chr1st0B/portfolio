@@ -226,6 +226,7 @@ svg {
   align-items: center;
   margin-left: 25%;
   margin-right: 25%;
+  /* margin: 0; */
   /* border: 2px solid red; */
 }
 
@@ -256,7 +257,7 @@ svg {
   align-items: center;
   margin-left: 25%;
   margin-right: 25%;
-  margin-bottom: 25px;
+  /* margin-bottom: 25px; */
 }
 
 .meBox3 hr{
@@ -266,7 +267,8 @@ svg {
 .meMasterBox2{
   display: flex;
   justify-content: center;
-  border: 2px solid red;
+  padding-top: 0;
+  /* border: 2px solid red; */
 }
 
 @media (max-width:1000px){
@@ -274,10 +276,16 @@ svg {
     flex-direction: column;
     align-items: center;
   }
+  .meMasterBox2 .meBox4{
+    margin-top: 25px;
+  }
+  .meMasterBox2 .meBox5{
+    margin-top: 25px;
+  }
 }
 
 .meMasterBox2 h3{
-  margin: 0;
+  margin-top: 8px;
   margin-bottom: 2%;
 }
 
@@ -296,6 +304,7 @@ svg {
   width: 400px; /* Full width */
   background-color: #ddd; /* Grey background */
   box-shadow: 4px 4px 2px grey;
+  border-radius: 5px;
 }
 
 .skills{
@@ -313,20 +322,24 @@ svg {
   margin-right: 10%;
   /* padding-left: 10%;
   padding-right: 10%; */
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
 }
 
 .html{
   width: 90%; background-color: #e44d26; /* Green */
+  border-radius: 5px;
 }
 .css{
   width: 80%; background-color: #2965f1; /* Blue */
+  border-radius: 5px;
 }
 .js{
-  width: 70%; background-color: #f44336; /* Red */
+  width: 70%; background-color: #efd81d; /* Red */
+  border-radius: 5px;
 }
 .react{
-  width: 65%; background-color: #f5e726; /* yellox */
+  width: 65%; background-color: #5ed3f3; /* yellox */
+  border-radius: 5px;
 }
 
 .meBox5{
@@ -337,21 +350,26 @@ svg {
   margin-right: 10%;
   /* padding-left: 10%;
   padding-right: 10%; */
-  border: 2px solid green;
+  /* border: 2px solid green; */
 }
 
 .vmware{
   width: 80%; background-color: #04AA6D; /* Green */
+  border-radius: 5px;
 }
 .srv{
   width: 70%; background-color: #2196F3; /* Blue */
+  border-radius: 5px;
 }
 .bdd{
   width: 70%; background-color: #f44336; /* Red */
+  border-radius: 5px;
 }
 .supervision{
   width: 65%; background-color: #f5e726; /* yellox */
+  border-radius: 5px;
 }
+
 
 /* Projects */
 
@@ -383,6 +401,14 @@ svg {
   display: flex;
   justify-content: center;
   margin-top: 100px;
+}
+
+@media (max-width:1000px){
+  .projectsMasterBox2{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
 }
 
 .projectsBox2{
@@ -427,6 +453,7 @@ img{
   flex-direction: column;
   margin-left: 25%;
   margin-right: 25%;
+  /* border: 2px solid royalblue; */
 }
 .contactBox1 hr{
   width: 10%;
@@ -438,6 +465,17 @@ img{
   flex-direction: column;
   margin-left: 25%;
   margin-right: 25%;
+  /* border: 2px solid palevioletred; */
+}
+
+@media (max-width:460px){
+  .contactBox2{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    margin-left: 25px;
+    width: 400px;
+  }
 }
 
 [type="text"], [type="email"] , textarea{
@@ -448,8 +486,38 @@ img{
   box-sizing: border-box;
   margin-bottom: 20px;
   margin-top: 10px;
+  border-radius: 5px;
+  border-color: #210011;
 }
 
 button{
   margin-top: 10px;
+  border-radius: 5px;
+  color: #210011;
+  /* border-color: #210011; */
+}
+
+
+/* Surprise */
+
+.surpriseBox1{
+  width: 400px;
+  height: 200px;
+  border: 2px solid red;
+}
+
+.task {
+  width: 200px;
+  height: 50px;
+  background-color:aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:5px;
+  border: 2px solid navy;
+}
+.surpriseBox1 input{
+  margin-top:10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
 }
