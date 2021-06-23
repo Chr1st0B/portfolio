@@ -16,10 +16,20 @@ const Header = () => {
     // Menu Day and Night
     const [mode, setMode] = useState('day')
 
+    // Menu Home
+    const [showLinks, setShowLinks] = useState(false)
+
+    const handleShowLinks = () => {
+        setShowLinks(!showLinks)
+    }
+
     return(
         <div className={mode === 'day' ? 'homeDay' : 'homeNight'} >
             <header className="bigBox">
-                <section className="box">
+                <section className={`box ${showLinks ? "show-nav" : "hide-nav"}`}>
+                    <button className="navbar_burger" onClick={handleShowLinks}>
+                        <span className="burger-bar"></span>
+                    </button>
                     <div className="liens">
                         <ul>
                             <li>

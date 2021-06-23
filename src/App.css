@@ -11,7 +11,6 @@ font-family: 'Do Hyeon', sans-serif; */
   text-align: center;
 }
 
-
 /* Button Day and Night */
 
 .power{
@@ -68,23 +67,133 @@ svg {
 .liens{
   display: flex;
 }
-
 .liens ul{
   display: flex;
   list-style: none;
   font-size: 25px;
   padding: 0%;
 }
-
-.liens ul li + li{
-  margin-left: 200px;
-
-}
-
+/* .liens ul li{
+  margin-left: 142px;
+} */
 .liens ul li a{
   text-decoration:none;
   font-weight: bold;
+  padding: 0 3.4em;
 }
+
+.navbar_burger{
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  color: inherit;
+  display: none;
+}
+
+
+@media (max-width:1500px){
+  .liens ul{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    /* left: 0; */
+    right: -100vw;
+    bottom: 0;
+    height: 609px;
+    padding: 2rem;
+    visibility: hidden;
+    background-color: black;
+  }
+  .show-nav .liens ul{
+    left: 0;
+    right: 0;
+    visibility: visible;
+  }
+  .liens ul li a{
+    display: block;
+    padding-bottom: 2rem;
+  }
+  .navbar_burger{
+    display: block;
+  }
+  .navbar_burger:hover{
+    cursor: pointer;
+  }
+
+  .burger-bar,
+  .burger-bar::before,
+  .burger-bar::after{
+    display: block;
+    width: 40px;
+    height: 4px;
+    position: relative;
+    border-radius: 3px;
+    background: white;
+  }
+  .burger-bar::before,
+  .burger-bar::after{
+    content: "";
+    position: absolute;
+    left: 0;
+  }
+  .burger-bar::before{
+    transform: translateY(-12px);
+  }
+  .burger-bar::after{
+    transform: translateY(12px);
+  }
+}
+
+/*menu burger = bouton */
+/* .burger span{
+  width:50px;
+  height:8px;
+  background: #000;
+  display: block;
+  margin:4px 0;
+} */
+
+/* @media (max-width:700px){
+  .liens ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    padding: 2rem;
+    background-color: black;
+  }
+  .leins ul li a {
+    text-decoration:none;
+  }
+} */
+
+/* @media (min-width:1400px){
+  .burger{
+      display: none;
+  }
+  .liens{
+    display: flex;
+  }
+  .liens ul{
+    display: flex;
+    list-style: none;
+    font-size: 25px;
+    padding: 0%;
+  }
+  .liens ul li + li{
+    margin-left: 200px;
+  }
+  .liens ul li a{
+    text-decoration:none;
+    font-weight: bold;
+  }
+} */
 
 /* Home */
 
@@ -114,6 +223,7 @@ svg {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
   margin-left: 25%;
   margin-right: 25%;
   /* border: 2px solid red; */
@@ -123,31 +233,47 @@ svg {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
   margin-left: 25%;
   margin-right: 25%;
 }
 
 .meBox1 hr{
-  width: 10%;
+  width: 25px;
+}
+
+.meBox2{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .meBox3{
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
   margin-left: 25%;
   margin-right: 25%;
   margin-bottom: 25px;
 }
 
 .meBox3 hr{
-  width: 10%;
+  width: 25px;
 }
 
 .meMasterBox2{
   display: flex;
   justify-content: center;
   border: 2px solid red;
+}
+
+@media (max-width:1000px){
+  .meMasterBox2{
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .meMasterBox2 h3{
@@ -183,7 +309,7 @@ svg {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-left: 15%;
+  margin-left: 10%;
   margin-right: 10%;
   /* padding-left: 10%;
   padding-right: 10%; */
@@ -208,7 +334,7 @@ svg {
   justify-content: center;
   flex-direction: column;
   margin-left: 10%;
-  margin-right: 15%;
+  margin-right: 10%;
   /* padding-left: 10%;
   padding-right: 10%; */
   border: 2px solid green;
@@ -226,30 +352,6 @@ svg {
 .supervision{
   width: 65%; background-color: #f5e726; /* yellox */
 }
-
-/* .progress-bar {
-  text-align: left;
-  transition-duration: 3s;
-}
-.progress-bar-danger {
-  background-color: #d9534f;
-}
-.progress-bar {
-  float: left;
-  width: 0;
-  height: 100%;
-  font-size: 12px;
-  line-height: 20px;
-  color: #fff;
-  text-align: center;
-  background-color: #337ab7;
-  -webkit-box-shadow: inset 0 -1px 0 rgb(0 0 0 / 15%);
-  box-shadow: inset 0 -1px 0 rgb(0 0 0 / 15%);
-  -webkit-transition: width .6s ease;
-  -o-transition: width .6s ease;
-  transition: width .6s ease;
-} */
-
 
 /* Projects */
 
