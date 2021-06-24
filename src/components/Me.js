@@ -55,22 +55,22 @@ const Me = () => {
 
                         <p><img src={html} />HTML:</p>
                         <div className="bar">
-                            <div className="skills html">90%</div>
+                            <div className="skills html">80%</div>
                         </div>
 
                         <p><img src={css} />CSS:</p>
                         <div className="bar">
-                            <div className="skills css">80%</div>
+                            <div className="skills css">70%</div>
                         </div>
 
                         <p><img src={js} />JavaScript:</p>
                         <div className="bar">
-                            <div className="skills js">70%</div>
+                            <div className="skills js">65%</div>
                         </div>
 
                         <p><img src={react} />React:</p>
                         <div className="bar">
-                            <div className="skills react">65%</div>
+                            <div className="skills react">60%</div>
                         </div>
 
                     </div>
@@ -100,20 +100,6 @@ const Me = () => {
                             <div className="skills supervision">65%</div>
                         </div>
                         
-                        {/* <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100" style="width: 94%;">
-                            <span class="skill">
-                                <i class="fa fa-html5 fa-2x"></i>
-                                HTML5<i class="val">94%</i>
-                            </span>
-                        </div>
-
-                        <div class="progress-bar progress-bar-blue" role="progressbar" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100" style="width: 94%;">
-                            <span class="skill">
-                                <i class="fa fa-css3 fa-2x"></i>
-                                            CSS
-                                <i class="val">94%</i>
-                            </span>
-                        </div> */}
                     </div>
                 </section>
             </div>

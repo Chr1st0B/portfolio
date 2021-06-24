@@ -79,7 +79,7 @@ svg {
 .liens ul li a{
   text-decoration:none;
   font-weight: bold;
-  padding: 0 3.4em;
+  padding: 0 3.1em;
 }
 
 .navbar_burger{
@@ -88,28 +88,47 @@ svg {
   background: transparent;
   border: none;
   color: inherit;
-  display: none;
 }
 
 
 @media (max-width:1500px){
+  .bigBox{
+    /* width: 350px; */
+  }
+  .homeDay{
+    width: 100%;
+  }
   .liens ul{
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: fixed;
     /* left: 0; */
-    right: -100vw;
+    right: 100vw;
     bottom: 0;
     height: 609px;
-    padding: 2rem;
+    top: 25px;
+    /* padding: 2rem; */
     visibility: hidden;
     background-color: black;
+    transition: all .8s ease-out;
   }
   .show-nav .liens ul{
     left: 0;
     right: 0;
     visibility: visible;
+  }
+  .liens ul li::after{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    width: 3vw;
+    height: 1px;
+    background: white;
+  }
+  .liens ul li:last-child::after{
+    display: none;
   }
   .liens ul li a{
     display: block;
@@ -131,6 +150,7 @@ svg {
     position: relative;
     border-radius: 3px;
     background: white;
+    transition: all .5s ease-in-out;
   }
   .burger-bar::before,
   .burger-bar::after{
@@ -144,56 +164,40 @@ svg {
   .burger-bar::after{
     transform: translateY(12px);
   }
+  .show-nav .burger-bar{
+    width: 0;
+    background: transparent;
+  }
+  .show-nav .burger-bar::before{
+    transform: rotate(45deg);
+  }
+  .show-nav .burger-bar::after{
+    transform: rotate(-45deg);
+  }
+  /* burger button animation */
+  .liens ul li{
+    transform: translateY(100vh);
+  }
+  .show-nav .liens ul li{
+    transform: translateY(0);
+  }
+  .show-nav .slideInDown-1{
+    transition: all 1s ease-out;
+  }
+  .show-nav .slideInDown-2{
+    transition: all 1.1s ease-out;
+  }
+  .show-nav .slideInDown-3{
+    transition: all 1.2s ease-out;
+  }
+  .show-nav .slideInDown-4{
+    transition: all 1.3s ease-out;
+  }
+  .show-nav .slideInDown-5{
+    transition: all 1.4s ease-out;
+  }
 }
 
-/*menu burger = bouton */
-/* .burger span{
-  width:50px;
-  height:8px;
-  background: #000;
-  display: block;
-  margin:4px 0;
-} */
-
-/* @media (max-width:700px){
-  .liens ul li{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    list-style: none;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 100vh;
-    padding: 2rem;
-    background-color: black;
-  }
-  .leins ul li a {
-    text-decoration:none;
-  }
-} */
-
-/* @media (min-width:1400px){
-  .burger{
-      display: none;
-  }
-  .liens{
-    display: flex;
-  }
-  .liens ul{
-    display: flex;
-    list-style: none;
-    font-size: 25px;
-    padding: 0%;
-  }
-  .liens ul li + li{
-    margin-left: 200px;
-  }
-  .liens ul li a{
-    text-decoration:none;
-    font-weight: bold;
-  }
-} */
 
 /* Home */
 
@@ -201,11 +205,25 @@ svg {
   display: flex;
   background-image: url(./images/aman.jpg);
   background-size: cover;
-  height: 669px;
+  height: 100vh;
   justify-content: center;
   align-items: center;
   color: white;
   background-position: center;
+  /* min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 80px;
+  left: 0; */
+}
+
+@media (max-width: 1024px) {
+  .home {
+    height: 100vh;
+    width: 100%;
+  }
 }
 
 .home h1{
@@ -215,7 +233,7 @@ svg {
 /* Me */
 
 .me{
-  height: 669px;
+  height: 100vh;
   /* border: 2px solid blue; */
 }
 
@@ -271,13 +289,14 @@ svg {
   /* border: 2px solid red; */
 }
 
-@media (max-width:1000px){
+@media (max-width:1024px){
   .meMasterBox2{
     flex-direction: column;
     align-items: center;
   }
   .meMasterBox2 .meBox4{
     margin-top: 25px;
+    /* border: 2px solid red; */
   }
   .meMasterBox2 .meBox5{
     margin-top: 25px;
@@ -326,19 +345,19 @@ svg {
 }
 
 .html{
-  width: 90%; background-color: #e44d26; /* Green */
+  width: 80%; background-color: #e44d26; /* Green */
   border-radius: 5px;
 }
 .css{
-  width: 80%; background-color: #2965f1; /* Blue */
+  width: 70%; background-color: #2965f1; /* Blue */
   border-radius: 5px;
 }
 .js{
-  width: 70%; background-color: #efd81d; /* Red */
+  width: 65%; background-color: #efd81d; /* Red */
   border-radius: 5px;
 }
 .react{
-  width: 65%; background-color: #5ed3f3; /* yellox */
+  width: 60%; background-color: #5ed3f3; /* yellox */
   border-radius: 5px;
 }
 
@@ -374,7 +393,7 @@ svg {
 /* Projects */
 
 .projects{
-  height: 669px;
+  height: 100vh;
 }
 
 .projectsMasterBox1{
@@ -403,7 +422,7 @@ svg {
   margin-top: 100px;
 }
 
-@media (max-width:1000px){
+@media (max-width:1024px){
   .projectsMasterBox2{
     flex-direction: column;
     align-items: center;
@@ -436,7 +455,7 @@ img{
 /* Contact */
 
 .contact{
-  height: 669px;
+  height: 100vh;
 }
 
 .contactsMasterBox1{

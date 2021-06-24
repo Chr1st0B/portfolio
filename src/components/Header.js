@@ -32,19 +32,19 @@ const Header = () => {
                     </button>
                     <div className="liens">
                         <ul>
-                            <li>
+                            <li className="slideInDown-1">
                                 <Link to="/">Home</Link>
                             </li>
-                            <li>
+                            <li className="slideInDown-2">
                                 <Link to="/Me">Me</Link>
                             </li>
-                            <li>
+                            <li className="slideInDown-3">
                                 <Link to="/Projects">Projects</Link>
                             </li>
-                            <li>
+                            <li className="slideInDown-4">
                                 <Link to="/Contact">Contact</Link>
                             </li>
-                            <li>
+                            <li className="slideInDown-5">
                                 <Link to="/Surprise">Surprise</Link>
                             </li>
                         </ul>
