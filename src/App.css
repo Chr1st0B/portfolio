@@ -389,6 +389,11 @@ svg {
   border-radius: 5px;
 }
 
+@media (max-width:460px){
+  .bar{
+    width: 200px;
+  }
+}
 
 /* Projects */
 
