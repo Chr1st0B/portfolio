@@ -391,7 +391,7 @@ svg {
 
 @media (max-width:460px){
   .bar{
-    width: 200px;
+    width: 300px;
   }
 }
 
@@ -527,21 +527,79 @@ button{
 .surpriseBox1{
   width: 400px;
   height: 200px;
-  border: 2px solid red;
+  /* border: 2px solid red; */
+}
+
+.surpriseBox1 input{
+  margin-top:10px;
+  font-size: 20px;
+}
+
+@keyframes wheelHueColor{
+  0%{
+    color: black;
+  }
+  50%{
+    color: yellow;
+  }
+  100%{
+    color: black;
+  }
 }
 
 .task {
   width: 200px;
   height: 50px;
-  background-color:aquamarine;
+  background-color:yellow;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top:5px;
-  border: 2px solid navy;
+  /* animation: moveTask 5s infinite; */
 }
-.surpriseBox1 input{
+.task:hover{
+  transform: scale(2) rotate(360deg);
+}
+/* @keyframes moveTask {
+  25%{
+    transform: rotate(0deg)
+  }
+  50%{
+    transform: rotate(360deg)
+  }
+  75%{
+    transform: rotate(-360deg)
+  }
+} */
+
+input{
   margin-top:10px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 20px;
+  background-color: rgb(0, 132, 255);
+}
+
+/* CSS Bouger image */
+.carre {
+  width: 50px;
+  height: 50px;
+  background-color: aquamarine;
+  margin:10px;
+  animation: rotateMe 4s linear infinite;
+  margin-top: 10px;
+}
+
+@keyframes rotateMe {
+  0% {
+    transform:  translateX(0px);
+  }
+  25% {
+    transform:  translateX(300px);
+  }
+  50%{
+    transform: translateX(0px) rotate(360deg);
+  }
+  75%{
+    transform: translateX(300px) rotate(360deg);
+  }
 }

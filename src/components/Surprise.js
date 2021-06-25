@@ -45,9 +45,12 @@ const Surprise = () => {
                     setTaskName('')
                     }}
                 >AJOUTE MOI</button>
+
+                <div className="carre"></div>
             </div>
             <div className="surpriseBox2">
-                
+                <h1>Pendu</h1>
+                <h2>Trouve le mot</h2>
             </div>
         </div>
     )
