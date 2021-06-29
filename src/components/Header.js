@@ -17,8 +17,11 @@ const Header = () => {
     const [mode, setMode] = useState('day')
 
     // Menu Home
+    // Menu sera fermé par défault "false"
     const [showLinks, setShowLinks] = useState(false)
 
+    // Fonction pour modifier la barre
+    // On éditera seulement la  valeur si elle est différent de "false"
     const handleShowLinks = () => {
         setShowLinks(!showLinks)
     }
@@ -26,8 +29,8 @@ const Header = () => {
     return(
         <div className={mode === 'day' ? 'homeDay' : 'homeNight'} >
             <header className="bigBox">
-                <section className={`box ${showLinks ? "show-nav" : "hide-nav"}`}>
-                    <button className="navbar_burger" onClick={handleShowLinks}>
+                <section className={`box ${showLinks ? "show-nav" : "hide-nav"}`}> {/* si showLinks est à "true" : met la classe "show-nav" (nouvelle classe intialisé en CSS) sinon met la classe "hide-nav" (celle par défaut qui est le "false") */}
+                    <button className="navbar_burger" onClick={handleShowLinks}> {/* ajoute la fonction handleShowLinks */}
                         <span className="burger-bar"></span>
                     </button>
                     <div className="liens">

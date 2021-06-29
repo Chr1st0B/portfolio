@@ -90,6 +90,7 @@ svg {
   color: inherit;
 }
 
+/* Menu Burger */
 
 @media (max-width:1500px){
   .bigBox{
@@ -104,20 +105,24 @@ svg {
     align-items: center;
     position: fixed;
     /* left: 0; */
-    right: 100vw;
+    right: 100vw; /* C'est ici qu'on dit au menu entier de se mettre sur la gauche (car on le pousse depuis la droite avec le mot "right") */
     bottom: 0;
     height: 609px;
     top: 25px;
     /* padding: 2rem; */
     visibility: hidden;
     background-color: black;
-    transition: all .8s ease-out;
+    transition: all .8s ease-out; /* effet de transition du menu entier de la gauche vers la droite */
   }
+
+  /* Ici on précise que le menu entier doit revenir à sa taille de base afin qu'il soit affiché */
   .show-nav .liens ul{
     left: 0;
     right: 0;
     visibility: visible;
   }
+
+  /* petite barre entre les liens */
   .liens ul li::after{
     content: "";
     display: block;
@@ -127,6 +132,7 @@ svg {
     height: 1px;
     background: white;
   }
+  /* supprimer la dernière barre entre les liens */
   .liens ul li:last-child::after{
     display: none;
   }
@@ -137,40 +143,50 @@ svg {
   .navbar_burger{
     display: block;
   }
+  /* on indique que les 3 barres définies sont cliquables */
   .navbar_burger:hover{
     cursor: pointer;
   }
 
-  .burger-bar,
-  .burger-bar::before,
-  .burger-bar::after{
+  /* définitions des 3 barres blanche pour faire le menu, cette méthode permet de modifier les 3 en même temps */
+  .burger-bar, /* bar du milieu */
+  .burger-bar::before, /* bar du début */
+  .burger-bar::after{ /* bar de fin */
     display: block;
     width: 40px;
     height: 4px;
     position: relative;
     border-radius: 3px;
     background: white;
-    transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out; /* effet de transition pour la croix du menu burger */
   }
+  /* apparition des 2 autres barres */
   .burger-bar::before,
   .burger-bar::after{
     content: "";
     position: absolute;
     left: 0;
   }
+  /* affichage de la barre "avant" */
   .burger-bar::before{
     transform: translateY(-12px);
   }
+  /* affichage de la barre "après" */
   .burger-bar::after{
     transform: translateY(12px);
   }
+
+  /* commencement des transistions des barres blanches du menu */
+  /* transitions de la barre de base (celle du milieu) */
   .show-nav .burger-bar{
-    width: 0;
-    background: transparent;
+    width: 0; /* disparition de la barre progressive */
+    background: transparent; /* disparition de la barre */
   }
+  /* rotation de la barre blanche "avant" (celle du dessus) de 45 degré */
   .show-nav .burger-bar::before{
     transform: rotate(45deg);
   }
+  /* rotation de la barre blanche "après" (celle du dessous) de -45 degré */
   .show-nav .burger-bar::after{
     transform: rotate(-45deg);
   }
@@ -289,7 +305,7 @@ svg {
   /* border: 2px solid red; */
 }
 
-@media (max-width:1024px){
+@media (max-width: 1024px){
   .meMasterBox2{
     flex-direction: column;
     align-items: center;
@@ -330,7 +346,7 @@ svg {
   text-align: right; /* Right-align text */
   padding-top: 5px; /* Add top padding */
   padding-bottom: 5px; /* Add bottom padding */
-  color: black; /* text color */
+  color: white; /* text color */
 }
 
 .meBox4{
@@ -345,19 +361,19 @@ svg {
 }
 
 .html{
-  width: 80%; background-color: #e44d26; /* Green */
+  width: 80%; background-color: #210011; /* Green */
   border-radius: 5px;
 }
 .css{
-  width: 70%; background-color: #2965f1; /* Blue */
+  width: 70%; background-color: #280116; /* Blue */
   border-radius: 5px;
 }
 .js{
-  width: 65%; background-color: #efd81d; /* Red */
+  width: 65%; background-color: #2f0a1c; /* Red */
   border-radius: 5px;
 }
 .react{
-  width: 60%; background-color: #5ed3f3; /* yellox */
+  width: 60%; background-color: #5e1533; /* yellox */
   border-radius: 5px;
 }
 
@@ -373,19 +389,19 @@ svg {
 }
 
 .vmware{
-  width: 80%; background-color: #04AA6D; /* Green */
+  width: 80%; background-color: #d9151e; /* Green */
   border-radius: 5px;
 }
 .srv{
-  width: 70%; background-color: #2196F3; /* Blue */
+  width: 70%; background-color: #f42b1b; /* Blue */
   border-radius: 5px;
 }
 .bdd{
-  width: 70%; background-color: #f44336; /* Red */
+  width: 70%; background-color: #ff561b; /* Red */
   border-radius: 5px;
 }
 .supervision{
-  width: 65%; background-color: #f5e726; /* yellox */
+  width: 65%; background-color: #fb8249; /* yellox */
   border-radius: 5px;
 }
 
@@ -492,15 +508,15 @@ img{
   /* border: 2px solid palevioletred; */
 }
 
-@media (max-width:460px){
+/* @media (max-width:460px){
   .contactBox2{
     flex-direction: column;
     align-items: center;
     margin-top: 25px;
     margin-left: 25px;
-    width: 400px;
+    width: 300px;
   }
-}
+} */
 
 [type="text"], [type="email"] , textarea{
   display: block;
@@ -572,7 +588,7 @@ button{
   }
 } */
 
-input{
+.surpriseBox1 input{
   margin-top:10px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 20px;
